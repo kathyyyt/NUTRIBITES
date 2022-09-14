@@ -1,0 +1,92 @@
+ion-content, .navTitle{ 
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.pageTitle {
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.navTitleLogin {
+  font-family: 'Poppins';
+  color: #d46c4e;
+}
+
+ion-list {
+  background: transparent;
+}
+
+  .pageTitle {
+    font-family: 'Poppins';
+    color: #312e2d;
+  }
+
+  .upperPart {
+    --ion-background-color: #fefbe9;
+  }
+  
+  .lowerPart {
+    background-color: #e1eedd;
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .logIn {
+    --background: #d46c4e;
+    --border-radius: 15px;
+    width: 80%;
+  }
+  
+  .logIn1 {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .signUp {
+    --background: white;
+    --border-radius: 15px;
+    width: 80%;
+  }
+  
+  .signUp1 {
+    color: #d46c4e;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .insertText {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 5px;
+  }
+  
+  .insertTextBG {
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+  }
+  
+  .signupLabel {
+    text-align: center;
+    color: rgb(161, 148, 148);
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 15px;
+  }
+  
+  .logPass {
+    color: black;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+  }

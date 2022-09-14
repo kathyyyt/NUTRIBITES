@@ -1,0 +1,124 @@
+<ion-app>
+  <ion-menu content-id="main-content">
+    <ion-header>
+        <ion-item button color="lightgreen" lines="full" class="userArea" routerLink="/profile">
+          <ion-avatar slot="start">
+            <img src="./assets/navigation/user.png">
+          </ion-avatar>
+          <ion-label class="userName">
+            Juan Dela Cruz<br>
+            <span>Edit Profile ></span>
+          </ion-label>
+        </ion-item>
+        <ion-item button color="white" lines="full" routerLink="/nutripay">
+          <ion-icon slot="start" name="wallet" color="red"></ion-icon>
+          <ion-label class="navTitle"> <img src="./assets/navigation/nutripay.png" class="nutripay"> </ion-label>
+        </ion-item>
+    </ion-header>
+
+    <ion-content color="peach">
+      <ion-list class="ionList1">
+        <ion-item button color="peach" routerLink="/home">
+          <ion-icon slot="start" name="home" color="black"></ion-icon>
+          <ion-label class="navTitle"> Home </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/products">
+          <ion-icon slot="start" name="fast-food" color="black"></ion-icon>
+          <ion-label class="navTitle"> Products </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/contact">
+          <ion-icon slot="start" name="call" color="black"></ion-icon>
+          <ion-label class="navTitle"> Contact </ion-label>
+        </ion-item>
+        <ion-item button color="peach" lines="full" routerLink="/about">
+          <ion-icon slot="start" name="business" color="black"></ion-icon>
+          <ion-label class="navTitle"> About us </ion-label>
+        </ion-item>
+        <ion-item button color="peach" lines="none" routerLink="/index-home">
+          <ion-label class="navTitleLogin"> Logout </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-page class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="white">
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title class="pageTitle">NutriPay</ion-title>
+        <ion-buttons slot="end" routerLink="/cart">
+          <ion-button>
+            <ion-icon slot="icon-only" name="cart" color="black"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content [fullscreen]="true" color="lightgreen">
+      <div class="main-header"></div>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-label>
+              <ion-note color="black" class="ion-margin-start ion-text-uppercase balance1">
+                Balance
+              </ion-note>
+              <p>
+                <ion-chip color="white">
+                  <ion-label class="ion-text-wrap balance2">
+                    ₱100,000.00
+                  </ion-label>
+                </ion-chip>
+              </p>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-margin">
+          <ion-col>
+            <ion-card class="ion-text-center topup1">
+              <ion-card-header>
+                <div>
+                  <p>
+                    <ion-icon slot="start" name="wallet" color="blue" class="topup2"></ion-icon>
+                    <ion-label color="blue" class="topup3">Top Up</ion-label>
+                  </p>
+                </div>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+        <ion-list class="lowerPart">
+          <ion-list-header class="ion-text-uppercase">
+            <ion-label class="cashHist1">Recent Transactions</ion-label>
+          </ion-list-header>
+          <ion-item lines="none" class="cashHist" color="white">
+            <ion-icon slot="start" name="cash" color="blue"></ion-icon>
+            <ion-label size="large" class="ion-text-wrap">
+              <b class="cashIn">Cash in</b>
+              <p class="cashInDate">12-09-2022</p>
+            </ion-label>
+            <ion-text slot="end" color="success" class="amount">₱100</ion-text>
+          </ion-item>
+          <ion-item lines="none" class="cashHist" color="white">
+            <ion-icon slot="start" name="cash" color="blue"></ion-icon>
+            <ion-label size="large" class="ion-text-wrap">
+              <b class="cashIn">Cash in</b>
+              <p class="cashInDate">11-09-2022</p>
+            </ion-label>
+            <ion-text slot="end" color="success" class="amount">₱500</ion-text>
+          </ion-item>
+        </ion-list>
+      </ion-grid>
+    </ion-content>
+  </ion-page>
+</ion-app>
+
+<ion-menu-controller></ion-menu-controller>

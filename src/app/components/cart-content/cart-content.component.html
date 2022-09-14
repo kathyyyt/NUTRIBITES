@@ -1,0 +1,24 @@
+<center>
+  <div class="cart-items">
+    <div class="itemImg"><img src="./assets/products/apple-crumb.jpg" class="img"></div>
+    <div class="itemDesc">
+      <h5>Apple Crumb Bars</h5>
+      <p>P200.00</p>
+    </div>
+    <div class="quantity">
+      <ion-buttons>
+        <ion-button (click)="increase.emit()" class="btnIncrease">
+          <ion-icon slot="icon-only" name="add" color="white"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <div class="qtyCounter">
+        <h5>1</h5>
+      </div>
+      <ion-buttons>
+        <ion-button (click)="decrease.emit()" class="btnDecrease">
+          <ion-icon slot="icon-only" name="remove" color="white"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </div>
+  </div>
+</center>

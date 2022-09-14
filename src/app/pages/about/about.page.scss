@@ -1,0 +1,107 @@
+ion-content, .navTitle{ 
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.pageTitle {
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.navTitleLogin {
+  font-family: 'Poppins';
+  color: #d46c4e;
+}
+
+ion-list {
+  background: transparent;
+}
+
+ion-avatar {
+  width: 70px;
+  height: 70px;
+}
+
+.userArea {
+  padding-top: 100px;
+  background-color: #e1eedd;
+}
+
+.userName {
+  font-family: 'Poppins';
+  color: #d46c4e;
+  font-weight: 600;
+}
+
+.nutripay {
+  width: 85px;
+  padding-top: 10px;
+}
+
+span {
+  color: #312e2d;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+  .upperPart {
+    --ion-background-color: #fefbe9;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .lowerPart {
+    background-color: #e1eedd;
+    padding-bottom: 10px;
+  }
+  
+  .Title1 {
+    text-align: center;
+    color: #6e9277;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .Title2 {
+    text-align: center;
+    color: #d46c4e;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .PicBorder {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .Names {
+    color: #47697e;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .IDPictures {
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  .history {
+    color: #47697e;
+    text-align: justify;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #fef3ea;
+    border-radius: 25px;
+    width: 95%;
+  }

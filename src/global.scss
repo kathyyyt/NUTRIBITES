@@ -1,0 +1,146 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+//For the Custom Font
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+  }
+
+//For color White
+  :root {
+    --ion-color-white: #ffffff;
+    --ion-color-white-rgb: 255,255,255;
+    --ion-color-white-contrast: #000000;
+    --ion-color-white-contrast-rgb: 0,0,0;
+    --ion-color-white-shade: #e0e0e0;
+    --ion-color-white-tint: #ffffff;
+  }
+  
+  .ion-color-white {
+    --ion-color-base: var(--ion-color-white);
+    --ion-color-base-rgb: var(--ion-color-white-rgb);
+    --ion-color-contrast: var(--ion-color-white-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-white-contrast-rgb);
+    --ion-color-shade: var(--ion-color-white-shade);
+    --ion-color-tint: var(--ion-color-white-tint);
+  }
+
+//For color Light Green
+  :root {
+    --ion-color-lightgreen: #e1eedd;
+    --ion-color-lightgreen-rgb: 225,238,221;
+    --ion-color-lightgreen-contrast: #000000;
+    --ion-color-lightgreen-contrast-rgb: 0,0,0;
+    --ion-color-lightgreen-shade: #c6d1c2;
+    --ion-color-lightgreen-tint: #e4f0e0;
+  }
+
+  .ion-color-lightgreen {
+    --ion-color-base: var(--ion-color-lightgreen);
+    --ion-color-base-rgb: var(--ion-color-lightgreen-rgb);
+    --ion-color-contrast: var(--ion-color-lightgreen-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-lightgreen-contrast-rgb);
+    --ion-color-shade: var(--ion-color-lightgreen-shade);
+    --ion-color-tint: var(--ion-color-lightgreen-tint);
+  }
+
+//For color Blue 
+  :root {
+    --ion-color-blue: #47697e;
+    --ion-color-blue-rgb: 71,105,126;
+    --ion-color-blue-contrast: #ffffff;
+    --ion-color-blue-contrast-rgb: 255,255,255;
+    --ion-color-blue-shade: #3e5c6f;
+    --ion-color-blue-tint: #59788b;
+  }
+
+  .ion-color-blue {
+    --ion-color-base: var(--ion-color-blue);
+    --ion-color-base-rgb: var(--ion-color-blue-rgb);
+    --ion-color-contrast: var(--ion-color-blue-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-blue-contrast-rgb);
+    --ion-color-shade: var(--ion-color-blue-shade);
+    --ion-color-tint: var(--ion-color-blue-tint);
+  }
+
+//For color Peach
+  :root {
+    --ion-color-peach: #fefbe9;
+    --ion-color-peach-rgb: 254,251,233;
+    --ion-color-peach-contrast: #000000;
+    --ion-color-peach-contrast-rgb: 0,0,0;
+    --ion-color-peach-shade: #e0ddcd;
+    --ion-color-peach-tint: #fefbeb;
+  }
+  
+  .ion-color-peach {
+    --ion-color-base: var(--ion-color-peach);
+    --ion-color-base-rgb: var(--ion-color-peach-rgb);
+    --ion-color-contrast: var(--ion-color-peach-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-peach-contrast-rgb);
+    --ion-color-shade: var(--ion-color-peach-shade);
+    --ion-color-tint: var(--ion-color-peach-tint);
+  }
+
+//For color Gray Black
+  :root {
+    --ion-color-black: #312e2d;
+    --ion-color-black-rgb: 49,46,45;
+    --ion-color-black-contrast: #ffffff;
+    --ion-color-black-contrast-rgb: 255,255,255;
+    --ion-color-black-shade: #2b2828;
+    --ion-color-black-tint: #464342;
+  }
+
+  .ion-color-black {
+    --ion-color-base: var(--ion-color-black);
+    --ion-color-base-rgb: var(--ion-color-black-rgb);
+    --ion-color-contrast: var(--ion-color-black-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-black-contrast-rgb);
+    --ion-color-shade: var(--ion-color-black-shade);
+	  --ion-color-tint: var(--ion-color-black-tint);
+  }
+
+//For color red 
+  :root {
+    --ion-color-red: #d46c4e;
+    --ion-color-red-rgb: 212,108,78;
+    --ion-color-red-contrast: #000000;
+    --ion-color-red-contrast-rgb: 0,0,0;
+    --ion-color-red-shade: #bb5f45;
+    --ion-color-red-tint: #d87b60;
+  }
+
+  .ion-color-red {
+    --ion-color-base: var(--ion-color-red);
+    --ion-color-base-rgb: var(--ion-color-red-rgb);
+    --ion-color-contrast: var(--ion-color-red-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-red-contrast-rgb);
+    --ion-color-shade: var(--ion-color-red-shade);
+    --ion-color-tint: var(--ion-color-red-tint);
+  }

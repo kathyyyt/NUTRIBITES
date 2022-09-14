@@ -1,0 +1,97 @@
+ion-content, .navTitle{ 
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.pageTitle {
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.navTitleLogin {
+  font-family: 'Poppins';
+  color: #d46c4e;
+}
+
+ion-list {
+  background: transparent;
+}
+
+ion-avatar {
+  width: 70px;
+  height: 70px;
+}
+
+.userArea {
+  padding-top: 100px;
+  background-color: #e1eedd;
+}
+
+.userName {
+  font-family: 'Poppins';
+  color: #d46c4e;
+  font-weight: 600;
+}
+
+.nutripay {
+  width: 85px;
+  padding-top: 10px;
+}
+
+span {
+  color: #312e2d;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+  .upperPart {
+    --ion-background-color: #fefbe9;
+  }
+  
+  .lowerPart {
+    background-color: #e1eedd;
+    padding-bottom: 10px;
+  }
+  
+  .productLabel {
+    text-align: center;
+    color: #d46c4e;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .inDemand {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .inDemandLabels {
+    color: #47697e;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .inDemandBG {
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  .seeMore {
+    --background: #d46c4e;
+    --border-radius: 20px;
+  }
+  
+  .seeMore1 {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px;
+  }

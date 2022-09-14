@@ -1,0 +1,94 @@
+<ion-app>
+  <ion-menu content-id="main-content">
+    <ion-header>
+      <ion-toolbar color="lightgreen">
+          <img src="./assets/navigation/logo.png">
+          <ion-item button color="white" routerLink="/login">
+            <ion-label class="navTitleLogin"> Log in / Create account </ion-label>
+          </ion-item>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content color="peach">
+      <ion-list>
+        <ion-item button color="peach" routerLink="/index-home">
+          <ion-icon slot="start" name="home" color="black"></ion-icon>
+          <ion-label class="navTitle"> Home </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/index-products">
+          <ion-icon slot="start" name="fast-food" color="black"></ion-icon>
+          <ion-label class="navTitle"> Products </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/index-contact">
+          <ion-icon slot="start" name="call" color="black"></ion-icon>
+          <ion-label class="navTitle"> Contact </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/index-about">
+          <ion-icon slot="start" name="business" color="black"></ion-icon>
+          <ion-label class="navTitle"> About us </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-page class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="white">
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title class="pageTitle">Products</ion-title>
+        <ion-buttons slot="end" routerLink="/login">
+          <ion-button>
+            <ion-icon slot="icon-only" name="cart" color="black"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="products">
+      <div class="products-container">
+        <ion-grid>
+          <p class="productsTitle">Our Products</p>
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="auto" *ngFor="let product of products">
+              <div class="productBG"><img src="./assets/products/{{product.productimage}}" width="150" class="product">
+                <div class="productLabels"><b>{{product.productname}}<br>{{product.productname1}}</b><br>P{{product.productprice}}</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal{{product.productid}}"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal{{product.productid}}" [swipeToClose]="true" [canDismiss]="canDismiss" *ngFor="let modal of modals">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">{{product.productname}} {{product.productname1}}</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/{{product.procutimage}}" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P{{product.productprice}}<br>
+                              <b>Quantity:</b> {{modal.modalquantity}}
+                              <br><br>
+                              <b>Health Benefits:</b><br>
+                              {{modal.modalhealth}}
+                              <br><br>
+                              <b>Ingredients:</b> {{modal.modalingredients}}
+                            </p>                              
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/login"><ion-icon class="addToCart1" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-content>
+  </ion-page>
+</ion-app>
+
+<ion-menu-controller></ion-menu-controller>

@@ -1,0 +1,109 @@
+<ion-app>
+  <ion-menu content-id="main-content">
+    <ion-header>
+      <ion-toolbar color="lightgreen">
+          <img src="./assets/navigation/logo.png">
+          <ion-item button color="white" routerLink="/login">
+            <ion-label class="navTitleLogin"> Log in / Create account </ion-label>
+          </ion-item>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content color="peach">
+      <ion-list>
+        <ion-item button color="peach" routerLink="/index-home">
+          <ion-icon slot="start" name="home" color="black"></ion-icon>
+          <ion-label class="navTitle"> Home </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/index-products">
+          <ion-icon slot="start" name="fast-food"></ion-icon>
+          <ion-label class="navTitle"> Products </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/index-contact">
+          <ion-icon slot="start" name="call"></ion-icon>
+          <ion-label class="navTitle"> Contact </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/index-about">
+          <ion-icon slot="start" name="business"></ion-icon>
+          <ion-label class="navTitle"> About us </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-page class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="white">
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title class="pageTitle">Sign up</ion-title>
+        <ion-buttons slot="end" routerLink="/login">
+          <ion-button>
+            <ion-icon slot="icon-only" name="cart" color="black"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="upperPart">
+      <div class="lowerPart">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+          <center>
+            <div class="insertTextBG">
+              <div class="insertText">
+                <ion-input class="logPass" placeholder="First Name" type="text" ngModel name="firstname"></ion-input>
+              </div>
+            </div>
+            <br>
+            <div class="insertTextBG1">
+              <div class="insertText">
+                <ion-input class="logPass" placeholder="Last Name" type="text" ngModel name="lastname"></ion-input>
+              </div>
+            </div>
+            <br>
+            <div class="insertTextBG1">
+              <div class="insertText">
+                <ion-input class="logPass" placeholder="Username" type="text" ngModel name="username"></ion-input>
+              </div>
+            </div>
+            <br>
+            <div class="insertTextBG1">
+              <div class="insertText">
+                <ion-input class="logPass" placeholder="Email" type="text" ngModel name="email"></ion-input>
+              </div>
+            </div>
+            <br>
+            <div class="insertTextBG1">
+              <div class="insertText">
+                <ion-input class="logPass" placeholder="Password" type="password" ngModel name="password"></ion-input>
+              </div>
+            </div>
+            <br>
+            <div class="insertTextBG1">
+              <div class="insertText">
+                <ion-input class="logPass" placeholder="Confirm Password" type="password" ngModel name="confirmpassword"></ion-input>
+              </div>
+            </div>
+            <ion-item color="lightgreen" class="termsCondition" lines="full">
+              <ion-checkbox></ion-checkbox>
+              <ion-label class="tcText ion-text-wrap">I agree to the <span class="tcText1">Terms and Conditions</span></ion-label>
+            </ion-item>
+            <br>
+            <ion-button class="signUp" type="submit" routerLink="/login"><p class="signUp1">Register</p></ion-button>
+            <h1 class="signupLabel">
+              Already have an account?
+            </h1>
+            <ion-button class="logIn" routerLink="/login"><p class="logIn1">Login</p></ion-button>
+          </center>
+        </form>
+      </div>
+    </ion-content>
+  </ion-page>
+</ion-app>
+
+<ion-menu-controller></ion-menu-controller>

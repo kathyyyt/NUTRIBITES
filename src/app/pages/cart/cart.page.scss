@@ -1,0 +1,111 @@
+ion-content, .navTitle{ 
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.pageTitle {
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.navTitleLogin {
+  font-family: 'Poppins';
+  color: #d46c4e;
+}
+
+ion-list {
+  background: transparent;
+}
+
+ion-avatar {
+  width: 70px;
+  height: 70px;
+}
+
+.userArea {
+  padding-top: 100px;
+  background-color: #e1eedd;
+}
+
+.userName {
+  font-family: 'Poppins';
+  color: #d46c4e;
+  font-weight: 600;
+}
+
+.nutripay {
+  width: 85px;
+  padding-top: 10px;
+}
+
+span {
+  color: #312e2d;
+  font-weight: 400;
+  font-size: 13px;
+}
+  
+    .cart {
+      --ion-background-color: #E1EEDD;
+    }
+
+    .ionList2 {
+      background-color: #E1EEDD;
+      margin-top: 5%;
+    }
+
+    app-cart-content {
+      display: block;
+      width: 100%;
+    }
+
+    ion-item-sliding {
+      overflow: hidden;
+      width: 90%;
+      left: 5%;
+    }
+
+    .ionItem1 {
+      --padding-start: 0;
+      --padding-end: 0;
+      --innder-padding-start: 0;
+      --inner-padding-end: 0;
+      border-radius: 12px;
+    }
+
+    ion-item-options {
+      border: 2px solid #d46c4e;
+      border-radius: 12px;
+      overflow:hidden;
+      background: #d46c4e;
+    }
+
+    ion-item-option {
+      background: #d46c4e;
+    }
+
+    .cart-footer {
+      position: absolute;
+      height: 27%;
+      width: 85%;
+      right: 25px;
+      bottom: 20px;
+      border-top: 2px solid #737373;
+      color: #312e2d;
+    }
+    
+    .total2 {
+      text-align: right;
+    }
+
+    .btnCheckout {
+      --background: #d46c4e;
+      --border-radius: 10px;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .btnCheckout {
+      color: white;
+      font-family: 'Poppins';
+    }
+    

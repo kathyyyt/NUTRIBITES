@@ -1,0 +1,191 @@
+ion-content, .navTitle{ 
+    font-family: 'Poppins';
+    color: #312e2d;
+  }
+  
+  .pageTitle {
+    font-family: 'Poppins';
+    color: #312e2d;
+  }
+  
+  .navTitleLogin {
+    font-family: 'Poppins';
+    color: #d46c4e;
+  }
+  
+  ion-list {
+    background: transparent;
+  }
+  
+  ion-avatar {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .userArea {
+    padding-top: 100px;
+    background-color: #e1eedd;
+  }
+  
+  .userName {
+    font-family: 'Poppins';
+    color: #d46c4e;
+    font-weight: 600;
+  }
+  
+  .nutripay {
+    width: 85px;
+    padding-top: 10px;
+  }
+  
+  span {
+    color: #312e2d;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+    .upperPart {
+      --ion-background-color: #fefbe9;
+    }
+    
+    .lowerPart {
+      background-color: #e1eedd;
+    }
+    
+    .checkoutInfo {
+      text-align: left;
+      color: #d46c4e;
+      font-size: 20px;
+      font-weight: 600;
+      padding-top: 15px;
+      padding-left: 15px;
+    }
+    
+    .checkoutInfo1 {
+      text-align: left;
+      color: #312e2d;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'Poppins';
+    }
+  
+    .checkoutInfo11 {
+      text-align: left;
+      color: #312e2d;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: 'Poppins';
+    }
+  
+    .checkoutInfo2 {
+      background-color: white;
+      border-radius: 15px;
+      width: 90%;
+    }
+  
+    .checkoutInfo3 {
+      text-align: right;
+      color: #3a3a3a;
+      font-size: 19px;
+      font-weight: 600;
+    }
+    
+    .checkoutInfo33 {
+      text-align: right;
+      color: #000000;
+      font-size: 21px;
+      font-weight: 500;
+      padding-left: 15px;
+    }
+  
+    .checkoutInfo4 {
+      text-align: left;
+      color: #3a3a3a;
+      font-size: 20px;
+      font-weight: 600;
+      padding-left: 15px;
+    }
+  
+    .checkoutInfo5 {
+      text-align: left;
+      color: #000000;
+      font-size: 21px;
+      font-weight: 600;
+      padding-left: 15px;
+    }
+  
+    .checkoutInfo6 {
+      text-align: left;
+      color: #000000;
+      font-size: 21px;
+      font-weight: 500;
+      padding-left: 15px;
+    }
+  
+    .checkoutInfo66 {
+      text-align: right;
+      color: #000000;
+      font-size: 21px;
+      font-weight: 600;
+      padding-left: 15px;
+    }
+  
+    .inDemand {
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    
+    .inDemandLabels {
+      color: #47697e;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+    }
+    
+    .inDemandBG {
+      background-color: white;
+      border-radius: 15px;
+    }
+    
+    .seeMore {
+      --background: #d46c4e;
+      --border-radius: 20px;
+    }
+    
+    .seeMore1 {
+      color: white;
+      font-family: 'Poppins';
+      font-size: 16px;
+      font-weight: 400;
+      padding: 15px;
+    }
+  
+    .checkOut {
+      --background: #47697e;
+      --border-radius: 20px;
+      height: 7%;
+      width: 90%;
+    }
+    
+    .checkOut1 {
+      color: white;
+      font-family: 'Poppins';
+      font-size: 20px;
+      font-weight: 400;
+    }
+    
+    ion-checkbox {
+    --size: 32px;
+    --background-checked: #000000;
+  }
+  
+  ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid #ffffff;
+  }

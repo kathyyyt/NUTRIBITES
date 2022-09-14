@@ -1,0 +1,100 @@
+<ion-app>
+  <ion-menu content-id="main-content">
+    <ion-header>
+      <ion-toolbar color="lightgreen">
+          <img src="./assets/navigation/logo.png">
+          <ion-item button color="white" (click)="loginClicked()">
+            <ion-label class="navTitleLogin"> Log in / Create account </ion-label>
+          </ion-item>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content color="peach">
+      <ion-list>
+        <ion-item button color="peach" (click)="homeClicked()">
+          <ion-icon slot="start" name="home" color="black"></ion-icon>
+          <ion-label class="navTitle"> Home </ion-label>
+        </ion-item>
+        <ion-item button color="peach" (click)="productsClicked()">
+          <ion-icon slot="start" name="fast-food" color="black"></ion-icon>
+          <ion-label class="navTitle"> Products </ion-label>
+        </ion-item>
+        <ion-item button color="peach" (click)="contactClicked()">
+          <ion-icon slot="start" name="call" color="black"></ion-icon>
+          <ion-label class="navTitle"> Contact </ion-label>
+        </ion-item>
+        <ion-item button color="peach" (click)="aboutClicked()">
+          <ion-icon slot="start" name="business" color="black"></ion-icon>
+          <ion-label class="navTitle"> About us </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-page class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="white">
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title class="pageTitle">About Us</ion-title>
+        <ion-buttons slot="end" routerLink="/login">
+          <ion-button>
+            <ion-icon slot="icon-only" name="cart" color="black"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="upperPart">
+      <p class="Title1">Our Story</p>
+      <center>
+        <div class="history">
+        Our story begins with a group of IT professionals trying out how to bring joy to people in the midst of pandemic. 
+        Noticing that many people love to eat unhealthy snacks, and considering the fact that its is more crucial nowadays to look after our health, 
+        the team came up with the idea of providing healthy snacks that would satisfy the cravings of the people while also increasing their nutrients intake. 
+        fter thinking about it for days, the team decide to create NutriBites, an M-commerce application offering delicious baked goods with a healthy twist!
+        </div>
+      </center>
+        <br>
+      <div class="lowerPart">
+        <ion-grid>
+          <p class="Title2">Meet our Developers</p>
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="auto">
+              <div class="IDPictures"><img src="./assets/about/scotie.jpg" width="150" class="PicBorder">
+                <div class="Names">Abaño<br>Scotie Allan</div>
+              </div>
+            </ion-col>
+            <ion-col size="auto">
+              <div class="IDPictures"><img src="./assets/about/elisha.jpg" width="150" class="PicBorder">
+                <div class="Names">Andrada<br>Elisha Bernadette</div>
+              </div>
+            </ion-col>
+            <ion-col size="auto">
+              <div class="IDPictures"><img src="./assets/about/eka.png" width="150" class="PicBorder">
+                <div class="Names">Concepcion<br>Ericka</div>
+              </div>
+            </ion-col>
+            <ion-col size="auto">
+              <div class="IDPictures"><img src="./assets/about/jl.jpg" width="150" class="PicBorder">
+                <div class="Names">Dela Cuesta<br>John Louie</div>
+              </div>
+            </ion-col>
+            <ion-col size="auto">
+              <div class="IDPictures"><img src="./assets/about/kath.jpg" width="150" class="PicBorder">
+                <div class="Names">Tumpalan<br>Kathleen Kate</div>
+              </div>
+              <br>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-content>
+  </ion-page>
+</ion-app>
+
+<ion-menu-controller></ion-menu-controller>

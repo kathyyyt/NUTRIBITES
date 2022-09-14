@@ -1,0 +1,1135 @@
+<ion-app>
+  <ion-menu content-id="main-content">
+    <ion-header>
+        <ion-item button color="lightgreen" lines="full" class="userArea" routerLink="/profile">
+          <ion-avatar slot="start">
+            <img src="./assets/navigation/user.png">
+          </ion-avatar>
+          <ion-label class="userName">
+            Juan Dela Cruz<br>
+            <span>Edit Profile ></span>
+          </ion-label>
+        </ion-item>
+        <ion-item button color="white" lines="full" routerLink="/nutripay">
+          <ion-icon slot="start" name="wallet" color="red"></ion-icon>
+          <ion-label class="navTitle"> <img src="./assets/navigation/nutripay.png" class="nutripay"> </ion-label>
+        </ion-item>
+    </ion-header>
+
+    <ion-content color="peach">
+      <ion-list>
+        <ion-item button color="peach" routerLink="/home">
+          <ion-icon slot="start" name="home" color="black"></ion-icon>
+          <ion-label class="navTitle"> Home </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/products">
+          <ion-icon slot="start" name="fast-food" color="black"></ion-icon>
+          <ion-label class="navTitle"> Products </ion-label>
+        </ion-item>
+        <ion-item button color="peach" routerLink="/contact">
+          <ion-icon slot="start" name="call" color="black"></ion-icon>
+          <ion-label class="navTitle"> Contact </ion-label>
+        </ion-item>
+        <ion-item button color="peach" lines="full" routerLink="/about">
+          <ion-icon slot="start" name="business" color="black"></ion-icon>
+          <ion-label class="navTitle"> About us </ion-label>
+        </ion-item>
+        <ion-item button color="peach" lines="none" routerLink="/index-home">
+          <ion-label class="navTitleLogin"> Logout </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-page class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="white">
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title class="pageTitle">Products</ion-title>
+        <ion-buttons slot="end" routerLink="/cart">
+          <ion-button>
+            <ion-icon slot="icon-only" name="cart" color="black"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="products">
+      <div class="products-container">
+        <ion-grid>
+          <p class="productsTitle">Our Products</p>
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/apple-crumb.jpg" width="150" class="product">
+                <div class="productLabels"><b>Apple Crumb<br>Bars</b><br>P200.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal31"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal31" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Apple Crumb Bars</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/apple-crumb.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P200.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b><br>
+                              ✓ Cholesterol Free<br>✓ Fat-Free<br>✓ Good
+                              Source of Fiber<br>✓ Sodium-Free
+                              <br><br>
+                              <b>Ingredients:</b> green apples, nutmeg,
+                              cinnamon, butter, baking powder, oats, sugar, flour, salt
+                            </p>                              
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/berry-coconut.jpg" width="150" class="product">
+                <div class="productLabels"><b>Berry Coconut<br>Crumble</b><br>P210.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal32"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal32" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Berry Coconut Crumble</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/berry-coconut.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P210.00<br>
+                              <b>Quantity:</b> 6 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b><br>✓ Low in Saturated
+                              Fat<br>✓ High-Fiber<br>✓ Cholesterol-Free
+                              <br>✓ Gluten-Free<br>✓ Sodium-Free<br>✓
+                              Low-Fat
+                              <br><br>
+                              <b>Ingredients:</b> unsalted butter, almond flour,
+                              old-fashioned oats, pecans, ground cinnamon, Kosher salt,
+                              pure maple syrup, frozen raspberries,
+                              pomegranate seeds, cornstarch, pomegranate seeds
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/black-bean.jpg" width="150" class="product">
+                <div class="productLabels"><b>Black Bean<br>Brownies</b><br>P200.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal33"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal33" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Black Bean Brownies</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/black-bean.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P200.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b><br>✓
+                              Cholesterol-Free<br>✓ Low-Fat<br>✓ Sodium-Free<br>✓
+                              High-Fiber
+                              <br><br>
+                              <b>Ingredients:</b> black beans, eggs, vegetable
+                              oil, cocoa powder, salt, vanilla extract, white sugar,
+                              instant coffee, chocolate chips
+                            </p>                              
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/blackberry-coconut.jpg" width="150" class="product">
+                <div class="productLabels"><b>Black Berry<br>Coconut Tart</b><br>P290.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal34"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal34" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Black Berry Coconut Tart</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/black-bean.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P290.00<br>
+                              <b>Quantity:</b> 1 whole / rectangular pan
+                              <br><br>
+                              <b>Health Benefits:</b><br>✓
+                              Cholesterol-Free<br>✓ Fat-Free<br>✓ Sodium-Free<br>✓
+                              High-Fiber
+                              <br><br>
+                              <b>Ingredients:</b> coconut crisp cookies,
+                              unsalted butter, cream cheese, unsweetened coconut cream,
+                              confectioner’s
+                              sugar, heavy cream, lime zest, lime juice,
+                              blackberries, granulated sugar
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/blueberry-cobbler.jpg" width="150" class="product">
+                <div class="productLabels"><b>Blueberry<br>Cobbler</b><br>P210.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal35"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal35" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Blueberry Cobbler</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/blueberry-cobbler.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P210.00<br>
+                              <b>Quantity:</b> 6 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b><br>✓
+                              Cholesterol-Free<br>✓ Fat-Free<br>✓ Sodium-Free
+                              <br><br>
+                              <b>Ingredients:</b> unsalted butter, canola oil,
+                              whole wheat pastry flour, baking powder, fine salt, 2% milk,
+                              agave syrup, pure vanilla extract, fresh blueberries
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/carrot-cake-breakfast.jpg" width="150" class="product">
+                <div class="productLabels"><b>Carrot Cake<br>Breakfast Cookies</b><br>P200.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal36"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal36" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Carrot Cake Breakfast Cookies</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/carrot-cake-breakfast.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P200.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b><br>✓
+                              Cholesterol-Free<br>✓ Fat-Free<br>✓ Low-Calorie<br>✓
+                              Low-Sodium<br>✓ Good Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> rolled oats, almond flour,
+                              baking powder, ground cinnamon, kosher salt, ground nutmeg,
+                              egg, unrefined coconut oil, pure maple syrup, pure
+                              vanilla extract, freshly grated carrots, walnuts
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/carrot-cake.jpg" width="150" class="product">
+                <div class="productLabels"><b>Carrot Cake<br>with Vegan Frosting</b><br>P290.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal37"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal37" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Carrot Cake with Vegan Frosting</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/carrot-cake.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P290.00<br>
+                              <b>Quantity:</b> 1 whole / round pan
+                              <br><br>
+                              <b>Health Benefits:</b> <br>
+                              ✓
+                              Cholesterol-Free<br>
+                              ✓ Fat-Free<br>
+                              ✓ Low-Calorie<br>
+                              ✓ Low in
+                              Saturated Fat<br>✓ Good Source of Fiber<br>
+                              ✓
+                              Sodium-Free<br>
+                              ✓ Gluten-Free
+                              <br><br>
+                              <b>Ingredients:</b> flour, baking powder, baking
+                              soda, cinnamon, nutmeg, sea salt, applesauce, almond milk,
+                              vanilla, cane sugar, coconut oil, grated carrots,
+                              macadamia nuts, cashews, maple syrup, fresh lemon juice
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+            
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/cinnamon-sugar.jpg" width="150" class="product">
+                <div class="productLabels"><b>Cinnamon Sugar<br>Vegan Donuts</b><br>P210.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal38"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal38" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Cinnamin Sugar Vegan Donuts</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/cinnamon-sugar.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P210.00<br>
+                              <b>Quantity:</b> 15 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>
+                              ✓
+                              Cholesterol-Free<br>
+                              ✓ Fat-Free<br>
+                              ✓ Sodium-Free
+                              <br><br>
+                              <b>Ingredients:</b> all-purpose flour, baking
+                              powder, ground cinnamon, baking soda, kosher salt, unsweetened
+                              almond milk,
+                              granulated sugar, melted vegan butter, apple cider
+                              vinegar, pure vanilla extract
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/freshfruit.jpg" width="150" class="product">
+                <div class="productLabels"><b>Fresh Fruit<br>Cheesecake Pie</b><br>P290.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal39"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal39" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Fresh Fruit Cheesecake Pie</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/freshfruit.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P290.00<br>
+                              <b>Quantity:</b> 1 whole / round pan
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Fat-Free<br>✓ Sodium-Free
+                              <br>✓ Gluten-Free<br>✓ Low Calorie<br>✓
+                              Good Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> tea biscuits, unsalted butter,
+                              cream cheese, granulated sugar, cold heavy cream, fresh lemon
+                              juice,
+                              clementines, kiwi, blueberries, edible flowers
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/fruitcake.jpg" width="150" class="product">
+                <div class="productLabels"><b>Fruitcake<br>Cookies</b><br>P190.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal40"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal40" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Fruitcake Cookies</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/fruitcake.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P190.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Fat-Free<br>✓ Sodium-Free<br>
+                              ✓ Gluten-Free<br>✓ Low Calorie<br>✓ Good
+                              Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> dried figs, raisins, candied
+                              cherries, dried apricots, honey, dry sherry, fresh lemon juice,
+                              pecans,
+                              Kosher salt, unsalted butter, ground cloves,
+                              superfine sugar, light brown sugar, egg, all-purpose flour
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/fudgy-pumpkin.jpg" width="150" class="product">
+                <div class="productLabels"><b>Fudgy Pumpkin<br>Brownie Bites</b><br>P190.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal41"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal41" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Fudgy Pumpkin Brownie Bites</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/fudgy-pumpkin.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P190.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Fat-Free<br>✓ Sodium-Free<br>✓
+                              Gluten-Free<br>✓ Good Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> all-purpose flour, sugar,
+                              unsweetened cocoa powder, baking soda, salt, canned pumpkin,
+                              egg, canola oil, vanilla, walnuts
+                            </p>                              
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/gluten-free.jpg" width="150" class="product">
+                <div class="productLabels"><b>Gluten-Free<br>Tahini Brownie</b><br>P200.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal42"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal42" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Gluten-Free Tahini Brownie</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/gluten-free.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P200.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Low Sodium<br>✓ Low in Saturated
+                              Fat<br>✓ Gluten-Free
+                              <br><br>
+                              <b>Ingredients:</b> cornstarch, unsweetened
+                              cocoa powder, bittersweet chocolate, virgin coconut oil, tahini, eggs,
+                              granulated sugar, light brown sugar, kosher salt,
+                              vanilla extract, light agave syrup (nectar)
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/keto-brownies.jpg" width="150" class="product">
+                <div class="productLabels"><b>Keto<br>Brownies</b><br>P200.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal43"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal43" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Keto Brownies</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/keto-brownies.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P200.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Low Sodium<br>✓ High fiber
+                              <br><br>
+                              <b>Ingredients:</b> unsalted butter, unsweetened
+                              cocoa powder, heavy cream, vanilla extract, egg, granulated
+                              erythritol sweetener,
+                              almond flour, kosher salt, unsweetened coconut
+                              chips
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/keto-cheesecake.jpg" width="150" class="product">
+                <div class="productLabels"><b>Keto<br>Cheesecake</b><br>P290.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal44"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal44" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Keto Cheesecake</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/keto-cheesecake.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P290.00<br>
+                              <b>Quantity:</b> 1 whole / round pan
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ High fiber<br>✓ Gluten-Free<br>✓
+                              Fat-Free<br>
+                              ✓ Sugar-Free<br>
+                              ✓ Sodium-Free<br>
+                              ✓
+                              Calorie Free
+                              <br><br>
+                              <b>Ingredients:</b> almond flour, coconut flour,
+                              shredded coconut, butter, cream cheese, sour cream, stevia,
+                              pure vanilla extract, egg, strawberries
+                            </p>                              
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/keto-chocolate.jpg" width="150" class="product">
+                <div class="productLabels"><b>Keto Chocolate<br>Cake</b><br>P290.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal45"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal45" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Keto Chocolate Cake</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/keto-chocolate.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P290.00<br>
+                              <b>Quantity:</b> 1 whole / round pan
+                              <br><br>
+                              <b>Health Benefits:</b> <br>
+                              ✓
+                              Low-Calorie<br>
+                              ✓ Sugar-Free<br>
+                              ✓ Fat-Free<br>
+                              ✓
+                              Cholesterol-Free<br>
+                              ✓ Low-Sodium
+                              <br><br>
+                              <b>Ingredients:</b> almond flour, unsweetened
+                              cocoa powder, coconut flour, flaxseed meal, baking powder, baking
+                              soda, kosher salt, butter,
+                              eggs, pure vanilla extract, almond milk, brewed
+                              coffee
+                            </p>                              
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/maple-walnut.jpg" width="150" class="product">
+                <div class="productLabels"><b>Maple Walnut<br>Blueberry Crisp</b><br>P290.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal46"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal46" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Maple Walnut Blueberry Crisp</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/maple-walnut.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P290.00<br>
+                              <b>Quantity:</b> 1 whole / round pan
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Fat-Free<br>✓ Good
+                              Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> thawed blueberries, pure
+                              maple syrup, lemon zest, tapioca flour, vanilla extract, old-fashioned
+                              oats,
+                              chopped walnuts, coconut, cinnamon, unsalted
+                              butter, salt
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/meyer-lemon.jpg" width="150" class="product">
+                <div class="productLabels"><b>Meyer Lemon<br>Blueberry Cake</b><br>P210.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal47"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal47" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Meyer Lemon Blueberry Cake</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/meyer-lemon.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P210.00<br>
+                              <b>Quantity:</b> 15 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Fat-Free<br>✓ Low-Calorie<br>✓
+                              Gluten-Free<br>✓ Sodium-Free
+                              <br><br>
+                              <b>Ingredients:</b> all-purpose flour, baking
+                              soda, kosher salt, unsalted butter, sugar, eggs, sour cream,
+                              grated meyer lemon zest, meyer lemon juice,
+                              blueberries, lemon curd
+                            </p>                              
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/mini-strawberry.jpg" width="150" class="product">
+                <div class="productLabels"><b>Mini Strawberry<br>Galettes</b><br>P210.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal48"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal48" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Mini Strawberry Galettes</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/mini-strawberry.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P210.00<br>
+                              <b>Quantity:</b> 15 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Low Fat<br>✓ Sodium-Free<br>
+                              ✓ Gluten-Free<br>✓ Low in Saturated
+                              Fat<br>✓ Good Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> all-purpose flour, kosher salt,
+                              unsalted butter, granulated sugar, lemon zest, fresh strawberries,
+                              fresh rhubarb, eggs, demerara sugar, strawberry
+                              jelly
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/nut-butter.jpg" width="150" class="product">
+                <div class="productLabels"><b>Nut Butter<br>Granola Bars</b><br>P260.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal49"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal49" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Nut Butter Granola Bars</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/nut-butter.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P260.00<br>
+                              <b>Quantity:</b> 4 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Gluten-Free<br>✓
+                              Low in Saturated Fat<br>✓ Good Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> raw nuts, raw pumpkin seeds,
+                              extra-virgin olive oil, old-fashioned oats, tart cherries, raisins,
+                              currants, dates, apricots, blueberries, natural
+                              peanut butter, honey, kosher salt, vanilla extract, egg white
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/oat-cookies.jpg" width="150" class="product">
+                <div class="productLabels"><b>Oat<br>Cookies</b><br>P190.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal50"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal50" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Oat Cookies</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/oat-cookies.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P190.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Good Source of Fiber<br>✓ Low Fat
+                              <br><br>
+                              <b>Ingredients:</b> whole wheat flour, all-purpose
+                              flour, granulated sugar, ground cinnamon, kosher salt,
+                              quick-cooking oats, unsweetened shredded
+                              coconut, walnuts, golden raisins, dried cranberries, pumpkin seeds,
+                              unsalted butter, honey, baking soda
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/one-bowl.jpg" width="150" class="product">
+                <div class="productLabels"><b>One Bowl<br>Pumpkin Cake</b><br>P290.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal51"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal51" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">One Bowl Pumpkin Cake</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/one-bowl.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P290.00<br>
+                              <b>Quantity:</b> 1 whole / round pan
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Fat-Free<br>✓ Good
+                              Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> whole grain flour, cinnamon,
+                              nutmeg, ginger, baking powder, baking soda, salt, butter, egg,
+                              vanilla, maple syrup, pumpkin puree, frosting
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/paleo-banana.jpg" width="150" class="product">
+                <div class="productLabels"><b>Paleo<br>Banana Bread</b><br>P260.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal52"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal52" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Paleo Banana Bread</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/paleo-banana.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P260.00<br>
+                              <b>Quantity:</b> 1 whole / loaf
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Fat-Free<br>✓ Good
+                              Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> eggs, bananas, vanilla
+                              extract, ground cinnamon, honey, almond flour,
+                              kosher salt, baking soda
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/peach-galette.jpg" width="150" class="product">
+                <div class="productLabels"><b>Peach<br>Galette</b><br>P260.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal53"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal53" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Peach Galette</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/peach-galette.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P260.00<br>
+                              <b>Quantity:</b> 1 whole / round pan
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Fat-Free
+                              <br><br>
+                              <b>Ingredients:</b> cups flour, teaspoons sugar,
+                              teaspoon salt, butter, ice water, yellow peaches, sugar, flour,
+                              vanilla extract, almond paste, butter, egg, coarse
+                              sugar
+                            </p>                              
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/peach-roses.jpg" width="150" class="product">
+                <div class="productLabels"><b>Peach<br>Roses</b><br>P230.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal54"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal54" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Peach Roses</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/peach-roses.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P230.00<br>
+                              <b>Quantity:</b> 6 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Fat-Free
+                              <br><br>
+                              <b>Ingredients:</b> puff pastry, peach jam,
+                              peaches, sugar
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/pineapple-cheesecake.jpg" width="150" class="product">
+                <div class="productLabels"><b>Pineapple<br>Cheesecake Bars</b><br>P200.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal55"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal55" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Pineapple Cheesecake Bars</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/pineapple-cheesecake.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P200.00<br>
+                              <b>Quantity:</b> 15 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Fat-Free
+                              <br><br>
+                              <b>Ingredients:</b> all-purpose flour, sugar, salt,
+                              cold butter, pineapple, cream cheese, sugar,
+                              all-purpose flour, egg, milk, vanilla extract,
+                              cinnamon
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/raspberry-crumb.jpg" width="150" class="product">
+                <div class="productLabels"><b>Raspberry<br>Crumb Bars</b><br>P200.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal56"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal56" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Raspberry Crumb Bars</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/raspberry-crumb.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P200.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Low-Fat<br>✓
+                              High-Fiber<br>✓ Low in Saturated Fat
+                              <br><br>
+                              <b>Ingredients:</b> all-purpose flour, unsalted
+                              butter, sugar, toasted almonds, old-fashioned rolled oats,
+                              baking soda, kosher salt, fresh raspberries
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/strawberry-coconut.jpg" width="150" class="product">
+                <div class="productLabels"><b>Strawberry Coconut<br>Crust Cheesecake</b><br>P250.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal57"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal57" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Strawberry Coconut Crust<br>Cheesecake</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/strawberry-coconut.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P250.00<br>
+                              <b>Quantity:</b> 1 whole / round pan
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Low-Fat<br>✓
+                              High-Fiber<br>
+                              ✓ Low in Saturated Fat<br>✓
+                              Gluten-Free<br>✓ Good Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> eggs, sugar, sweetened
+                              shredded coconut, lemon, cream cheese, sour cream, potato starch,
+                              pure vanilla extract, strawberry jam, small
+                              strawberries,
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/sweet-and.jpg" width="150" class="product">
+                <div class="productLabels"><b>Sweet and Salty<br>Chocolate Bars</b><br>P200.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal58"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal58" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Sweet and Salty Chocolate Bars</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/sweet-and.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P200.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Sodium-Free<br>✓ Good Source of
+                              Fiber<br>✓ Fat-Free
+                              <br><br>
+                              <b>Ingredients:</b> dark chocolate chips, salted
+                              pretzels, dried cherries, unsweetened coconut flakes,
+                              unsalted pistachios, Flaky sea salt
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/sweet-potato.jpg" width="150" class="product">
+                <div class="productLabels"><b>Sweet Potato<br>Banana Muffins</b><br>P260.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal59"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal59" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Sweet Potato Banana Muffins</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/sweet-potato.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P260.00<br>
+                              <b>Quantity:</b> 6 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Low-Sodium<br>✓Good Source of
+                              Fiber<br>✓ Fat-Free
+                              <br><br>
+                              <b>Ingredients:</b> flour, brown sugar, baking
+                              powder, allspice, salt, mashed sweet potatoes, mashed banana,
+                              melted butter, egg, milk, chopped pecans
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+
+            <ion-col size="auto">
+              <div class="productBG"><img src="./assets/products/trail-mix.jpg" width="150" class="product">
+                <div class="productLabels"><b>Trail Mix<br>Cookies</b><br>P190.00</div>
+                  <div class="productBTN">
+                    <ion-button class="view" id="open-modal60"><p class="view1">View</p></ion-button>
+                      <ion-modal #modal trigger="open-modal60" [swipeToClose]="true" [canDismiss]="canDismiss">
+                        <ng-template>
+                          <ion-header>
+                            <ion-toolbar>
+                              <ion-title class="modalTitle">Trail Mix Cookies</ion-title>
+                            </ion-toolbar>
+                          </ion-header>
+                          <ion-content class="ion-padding">
+                            <center><img src="./assets/products/trail-mix.jpg" width="150" class="modal-product"></center>
+                            <p class="information"><br>
+                              <b>Price:</b> P190.00<br>
+                              <b>Quantity:</b> 20 pieces / box
+                              <br><br>
+                              <b>Health Benefits:</b> <br>✓
+                              Cholesterol-Free<br>✓ Low-Fat<br>✓Good Source of Fiber
+                              <br><br>
+                              <b>Ingredients:</b> raw nuts and seeds,
+                              old-fashioned oats, egg, unsalted butter, dark brown sugar,
+                              granulated sugar,
+                              vanilla extract, kosher salt, baking soda, assorted
+                              dried fruit, bittersweet chocolate bars, all-purpose flour
+                            </p>
+                          </ion-content>
+                        </ng-template>
+                      </ion-modal>
+                    <ion-button class="addToCart" routerLink="/cart"><ion-icon class="addToCart1" slot="icon-only" name="cart" color="white"></ion-icon></ion-button>
+                  </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-content>
+  </ion-page>
+</ion-app>
+
+<ion-menu-controller></ion-menu-controller>

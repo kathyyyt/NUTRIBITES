@@ -1,0 +1,100 @@
+<ion-app>
+  <ion-menu content-id="main-content">
+    <ion-header>
+        <ion-item button color="lightgreen" lines="full" class="userArea" routerLink="/profile">
+          <ion-avatar slot="start">
+            <img src="./assets/navigation/user.png">
+          </ion-avatar>
+          <ion-label class="userName">
+            Juan Dela Cruz<br>
+            <span>Edit Profile ></span>
+          </ion-label>
+        </ion-item>
+        <ion-item button color="white" lines="full" routerLink="/nutripay">
+          <ion-icon slot="start" name="wallet" color="red"></ion-icon>
+          <ion-label class="navTitle"> <img src="./assets/navigation/nutripay.png" class="nutripay"> </ion-label>
+        </ion-item>
+    </ion-header>
+
+    <ion-content color="peach">
+      <ion-list>
+          <ion-item button color="peach" routerLink="/home">
+            <ion-icon slot="start" name="home" color="black"></ion-icon>
+            <ion-label class="navTitle"> Home </ion-label>
+          </ion-item>
+          <ion-item button color="peach" routerLink="/products">
+            <ion-icon slot="start" name="fast-food" color="black"></ion-icon>
+            <ion-label class="navTitle"> Products </ion-label>
+          </ion-item>
+          <ion-item button color="peach" routerLink="/contact">
+            <ion-icon slot="start" name="call" color="black"></ion-icon>
+            <ion-label class="navTitle"> Contact </ion-label>
+          </ion-item>
+          <ion-item button color="peach" lines="full" routerLink="/about">
+            <ion-icon slot="start" name="business" color="black"></ion-icon>
+            <ion-label class="navTitle"> About us </ion-label>
+          </ion-item>
+          <ion-item button color="peach" lines="none" routerLink="/index-home">
+            <ion-label class="navTitleLogin"> Logout </ion-label>
+          </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-page class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="white">
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title class="pageTitle">Home</ion-title>
+        <ion-buttons slot="end" routerLink="/cart">
+          <ion-button>
+            <ion-icon slot="icon-only" name="cart" color="black"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="upperPart">
+      <img src="./assets/home/moving-logo.gif">
+      <div class="lowerPart">
+        <ion-grid>
+          <p class="productLabel">Our Products</p>
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="auto">
+              <div class="inDemandBG"><img src="./assets/home/black-bean.jpg" width="150" class="inDemand">
+                <div class="inDemandLabels">Black Bean<br>Brownies</div>
+              </div>
+            </ion-col>
+            <ion-col size="auto">
+              <div class="inDemandBG"><img src="./assets/home/cinnamon-sugar.jpg" width="150" class="inDemand">
+                <div class="inDemandLabels">Cinnamon Sugar<br>Vegan Donuts</div>
+              </div>
+            </ion-col>
+            <ion-col size="auto">
+              <div class="inDemandBG"><img src="./assets/home/keto-brownies.jpg" width="150" class="inDemand">
+                <div class="inDemandLabels">Keto<br>Brownies</div>
+              </div>
+            </ion-col>
+            <ion-col size="auto">
+              <div class="inDemandBG"><img src="./assets/home/keto-chocolate.jpg" width="150" class="inDemand">
+                <div class="inDemandLabels">Keto Chocolate<br>Cake</div>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="auto">
+              <ion-button class="seeMore" routerLink="/products"><p class="seeMore1">See more</p></ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-content>
+  </ion-page>
+</ion-app>
+
+<ion-menu-controller></ion-menu-controller>

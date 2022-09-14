@@ -1,0 +1,140 @@
+ion-content, .navTitle{ 
+    font-family: 'Poppins';
+    color: #312e2d;
+  }
+  
+  .pageTitle {
+    font-family: 'Poppins';
+    color: #312e2d;
+  }
+  
+  .navTitleLogin {
+    font-family: 'Poppins';
+    color: #d46c4e;
+  }
+  
+  ion-list {
+    background: transparent;
+  }
+  
+  ion-avatar {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .userArea {
+    padding-top: 100px;
+    background-color: #e1eedd;
+  }
+  
+  .userName {
+    font-family: 'Poppins';
+    color: #d46c4e;
+    font-weight: 600;
+  }
+  
+  .nutripay {
+    width: 85px;
+    padding-top: 10px;
+  }
+  
+  span {
+    color: #312e2d;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  .balance1 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #47697e;
+  }
+
+    .main-header {
+        height: 30vh;
+        width: 150%;
+        background-color: #fefbe9;
+        //background: linear-gradient(90deg, rgba(254, 251, 233, 1) 37%, rgba(194, 210, 189, 1) 100%);
+        box-shadow: 0 1px 10px var(--ion-color-light);
+        border-radius: 0 0 50% 50%;
+        margin-left: -14vh;
+    }
+
+    ion-grid {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(10vh);
+        padding-bottom: 20vh;
+    }
+
+        
+    ion-note {
+        font-size: 1rem;
+        font-family: 'Poppins';
+    }
+
+    .balance2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 1px var(--ion-color-medium);
+    font-family: 'Poppins';
+    color: #d46c4e;
+    }
+
+    .cashIn {
+        color: #d46c4e;
+        font-family: 'Poppins';
+    }
+
+    .cashInDate {
+        font-family: 'Poppins';
+        color: white;
+    }
+
+    .topup1 {
+        border-radius: 10px !important;
+        background-color: white;
+        margin: 30px 0;
+    }            
+
+    .topup3 {
+        font-family: 'Poppins';
+        font-weight: bold;
+        font-size: larger;
+        letter-spacing: 0.5px;
+        margin-left: 10px;
+    }                
+
+    .topup2 {
+        font-size: 24px;
+        margin-top: 15px;
+    }             
+            
+
+    .lowerPart {
+        background: #e1eedd;
+    }    
+
+    .cashHist {
+        width: 95%;
+        margin: auto;
+        border-radius: 5px;
+        margin-bottom: 1vh;
+        background-color:#fefbe9;
+    }
+
+    .cashHist1 {
+        color: #312e2d;
+        font-family: 'Poppins';
+        font-weight: 800;
+    }
+
+    .amount {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 17px;
+        color: #6e9277;
+    }

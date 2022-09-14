@@ -1,0 +1,86 @@
+ion-content, .navTitle{ 
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.pageTitle {
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.navTitleLogin {
+  font-family: 'Poppins';
+  color: #d46c4e;
+}
+
+ion-list {
+  background: transparent;
+}
+
+ion-avatar {
+  width: 70px;
+  height: 70px;
+}
+
+.userArea {
+  padding-top: 100px;
+  background-color: #e1eedd;
+}
+
+.userName {
+  font-family: 'Poppins';
+  color: #d46c4e;
+  font-weight: 600;
+}
+
+.nutripay {
+  width: 85px;
+  padding-top: 10px;
+}
+
+span {
+  color: #312e2d;
+  font-weight: 400;
+  font-size: 13px;
+}
+  
+    .upperPart {
+      background-color: #fefbe9;
+    }
+    
+    .lowerPart {
+      background-color: #e1eedd;
+      padding-bottom: 10px;
+    }
+    
+    .profileMenu {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .profileMenu1 {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      --border-radius: 15px;
+    }
+  
+    .profileTitle, .profileTitle1 { 
+      font-family: 'Poppins';
+      color: #6e9277;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .profileTitle2 {
+      font-family: 'Poppins';
+      text-align: center;
+      color: #d46c4e;
+      font-weight: 600;
+    }
+    
+    .profileLbl{ 
+      font-family: 'Poppins';
+      color: #d46c4e;
+      font-weight: 400;
+    }

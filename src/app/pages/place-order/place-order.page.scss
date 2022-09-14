@@ -1,0 +1,119 @@
+ion-content, .navTitle{ 
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.pageTitle {
+  font-family: 'Poppins';
+  color: #312e2d;
+}
+
+.navTitleLogin {
+  font-family: 'Poppins';
+  color: #d46c4e;
+}
+
+ion-list {
+  background: transparent;
+}
+
+ion-avatar {
+  width: 70px;
+  height: 70px;
+}
+
+.userArea {
+  padding-top: 100px;
+  background-color: #e1eedd;
+}
+
+.userName {
+  font-family: 'Poppins';
+  color: #d46c4e;
+  font-weight: 600;
+}
+
+.nutripay {
+  width: 85px;
+  padding-top: 10px;
+}
+
+span {
+  color: #312e2d;
+  font-weight: 400;
+  font-size: 13px;
+}
+  
+  .navTitleLogin {
+    font-family: 'Poppins';
+    color: #d46c4e;
+  }
+  
+  .upperPart {
+    background-color: #e1eedd;
+    padding-bottom: 10px;
+    height: 100vh;
+  }
+  
+  .thankyou {
+    color: #6e9277;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .breadpic {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 80%;
+    border-top: 3px solid #bcd4b4;
+    margin-top: 50px;
+  }
+  
+  .breadpic1{
+    width: 70%;
+  }
+  
+  .logo2 {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .caption {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+  }
+  
+  .orderpic {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 70%;
+  }
+  
+  .btnBack{
+    --background: #47697e;
+    --border-radius: 10px;
+  }
+  
+  .btnBack1{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px;
+  }
