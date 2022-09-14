@@ -1,0 +1,7 @@
+{
+  "name": "nutribites",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
